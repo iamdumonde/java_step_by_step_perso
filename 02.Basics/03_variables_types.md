@@ -108,3 +108,28 @@ String greetings = "Greetings, earthlings!";
 // Option 2 for declaring a String
 String request = new String("Take me to your leader.");
 ```
+
+
+/*
+## Conversion élargissante
+
+Convertir une valeur d'un type de données plus petite en un type de données plus grand. Il n'y a généralement pas 
+de perte de données lors de ces conventions.
+Ex:
+float -> double
+
+```Java
+int x = 5; //[-2milliard, 2milliards]
+long l = 23L; // [-9 quintillions, 9 quintillions]
+// quintillions = 10 *** 30
+// 1 000 000 000 000 000 000 000 000 000 000
+byte y = 127; // [-128, 127]
+short z = 32767; // [-32 768, 32 767]
+double d = 23d; // 15 chiffres après la virgule
+char c = 'c'; // caractère unicode 0  - 65 535
+
+int val = (int) 24;
+```
+*/ 
+
+## Conversion rétrécissante

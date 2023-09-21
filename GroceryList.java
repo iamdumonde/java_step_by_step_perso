@@ -50,7 +50,7 @@ public class GroceryList {
         String someStr;
         for (int i = 0; i < groceryPrices.length; i++) {
             someStr = groceryPrices[i] + "";
-            if (someStr.endsWith("99")) {
+            if (someStr.endsWith(".99")) {
                 return true;
             }
         }
@@ -73,18 +73,20 @@ public class GroceryList {
     }
 
     //Défi supplémentaire
-    public static String isAlphabetizedl(String[] groceryList) {
-        String val = groceryList[0];
-        String[] copyGroceryList = Arrays.copyOf(groceryList, groceryList.length);
-        Arrays.sort(copyGroceryList);
-        for(int i = 0; i < groceryList.length; i++){
-            if(groceryList[i] == copyGroceryList[i]){
-                continue;
-            } 
-            val = groceryList[i];
-        }
-        return val;
-    }
+    // public static String isAlphabetizedl(String[] groceryList) {
+    //     // String val = groceryList[0];
+    //     String[] emptyArray = new String[0];
+    //     // ArrayList<String> emptyArray = ArrayList<String>()
+    //     String[] copyGroceryList = Arrays.copyOf(groceryList, groceryList.length);
+    //     Arrays.sort(copyGroceryList);
+    //     for(int i = 0; i < groceryList.length; i++){
+    //         if(groceryList[i] == copyGroceryList[i]){
+    //             // emptyArray.add(groceryList[i]);
+    //         } 
+    //         // val = groceryList[i];
+    //     }
+    //     // return val;
+    // }
 
 
     /******************************************************************************/
@@ -120,6 +122,6 @@ public class GroceryList {
 
         // // Défi supplémentaire
         String[] groceryListeee = {"apples", "zanannn", "banana", "bananas", "chocolate"};
-        System.out.println(isAlphabetizedl(groceryListeee));
+        // System.out.println(isAlphabetizedl(groceryListeee));
     }
 }
