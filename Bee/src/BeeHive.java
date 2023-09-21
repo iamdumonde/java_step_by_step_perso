@@ -11,8 +11,7 @@ public class BeeHive {
     }
   
     public void printBees() {
-  
-  
+        
     }
   
     public static void main(String[] args) {
