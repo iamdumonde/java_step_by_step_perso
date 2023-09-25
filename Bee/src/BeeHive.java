@@ -26,6 +26,7 @@ public class BeeHive {
         for (Bee bee : beeList) {
             if (bee.getName().equals(beeName)) {
                 bee.leaveHome();
+                return;
             }
         }
     }
